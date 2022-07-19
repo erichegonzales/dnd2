@@ -1,3 +1,4 @@
+import React from "react"
 import './App.css'
 import { useState } from 'react'
 import MainMenu from './components/MainMenu'
@@ -13,8 +14,8 @@ function App() {
   // (condition) ? return this if true : return this if false
   // <Home />  ... const Home = {html: [], change: () => {}}
   const [screen, setScreen] = useState('main')
-  
-  return(
+
+  return (
     <div>
       {
         (screen === 'main') ? <MainMenu setScreen={setScreen} /> : <CreateACharacter />

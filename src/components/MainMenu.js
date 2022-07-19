@@ -1,5 +1,7 @@
+import React from "react"
+
 const MainMenu = ({ setScreen }) => {
-  return(
+  return (
     <div className="screen">
       <video autoPlay muted loop id="myVideo">
         <source src="https://a2development.s3.amazonaws.com/H264HD1080.mov" type="video/mp4" />
@@ -7,8 +9,8 @@ const MainMenu = ({ setScreen }) => {
       <div className="" id="fs-overlay">
         <img
           id="header-img"
-          alt=""
           src='https://1000logos.net/wp-content/uploads/2021/08/Dungeons-and-Dragons-Logo-2014.png'
+          alt=""
         />
         <div className="menu-links">
           <h3 onClick={() => { setScreen('create') }}>Create a Character</h3>
